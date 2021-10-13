@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+}
+
+html,body,#back{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    padding: 40px 20px;
+    background: linear-gradient(167deg, rgba(212,204,200,1) 0%, rgba(193,146,136,1) 40%, rgba(1,45,54,0.7829540263370973) 100%);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .icon{
+   font-size: 25px;
+}
+
+main{
+    height: 88vh;
+    position: relative;
+    overflow: hidden;
+}
+
+main img{
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.heading{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+    font-size: 110px;
+    font-weight: 100;
+    line-height: 115px;
+    z-index: 9;
+}
+
+.color{
+    color: #e0806c;
+}
+
+.heading p{
+    font-size: 140px;
+    letter-spacing: 10px;
+}
+
+.ellipse{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 10;
+    transform: rotate(-20deg);
+}
+
+
+.vrtcl{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    width: 2%;
+    flex-direction: column;
+}
+
+.vrtcl h4{
+    transform: rotate(-90deg);
+}
+
+.vrtcl hr{
+    margin: 10px;
+    background-color: #fff;
+    width: 2px;
+    height: 55px;
+}
+
+
+/* circular text */
+
+.container {
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    text-align: center;
+  }
+  
+  div.circTxt {
+    display: inline-block;
+    margin-bottom: 128px;
+    color: #333;
+    position:relative;
+  }
+  
+  #green {
+    color: #e0806c;
+    font-size:22px;
+    font-weight:bold;
+    top:40px;
+    left:-150px;
+  }
+  
+
+@media(max-width:450px){
+    #back{
+        padding: 10px 5px;
+    }
+
+    nav span{
+        display: none;
+    }
+
+    .icon{
+        display: flex;
+    }
+
+    .heading , .heading p{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    main img {
+        width: 235px;
+    }
+
+    .ellipse{
+        width: 135px;
+        top: 24%;
+        left: -12%;
+        transform: rotate(58deg);
+    }
+
+    .vrtcl {
+        top:60%;
+        left: 2%;
+    }
+
+    .container{
+        right: -22%;
+        bottom: 7%;
+    }
+}  
+
+
